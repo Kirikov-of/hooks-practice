@@ -4,30 +4,30 @@ function App() {
   const [timer, setTimer] = React.useState(0);
   let time = React.useRef();
 
-  const goTime = () => {
+  const goTimer = () => {
     time.current = setInterval(() => setTimer((prev) => prev + 1), 1000);
   };
 
-  const clearTime = () => {
+  const clearTimer = () => {
     clearInterval(time.current);
   };
 
   const breakTimer = () => {
-    clearTime();
+    clearTimer();
     setTimer(0);
   };
 
   const restartTimer = () => {
     breakTimer();
-    goTime();
+    goTimer();
   };
 
   return (
     <div className="App">
       <h1>Hello React</h1>
       <p>{timer}</p>
-      <button onClick={goTime}>go</button>
-      <button onClick={clearTime}>stop</button>
+      <button onClick={goTimer}>go</button>
+      <button onClick={clearTimer}>stop</button>
       <button onClick={restartTimer}>restart</button>
       <button onClick={breakTimer}>break</button>
     </div>
