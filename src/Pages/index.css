@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+.tasks {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #8a5b5b;
+  min-height: 400px;
+  margin: 25px;
+}
+
+.task {
+  display: flex;
+  border: 2px solid #fff;
+  margin: 15px 15px;
+  padding: 5px;
+}
+
+input {
+  margin-right: 5px;
+}
+
+button {
+  margin: 5px;
+}
+
+.back {
+  display: block;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.App p {
+  margin: 10px;
+}
